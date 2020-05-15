@@ -49,9 +49,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  display: flex;
   justify-content: space-between;
 
   width: 135px;
+  display: block;
 }
 
