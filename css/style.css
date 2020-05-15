@@ -14,7 +14,7 @@ body {
 }
 
 .welcome {
-  background: #000000 url("../images/football_767.jpg");
+  background: #000000 url(../images/football_767.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -51,5 +51,7 @@ body {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
-  fill: #ffffff;
+
+  width: 135px;
 }
+
