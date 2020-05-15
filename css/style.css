@@ -1,3 +1,55 @@
-h1 {
-	color: red;
+body {
+  display: block;
+  margin: 0px;
+  }
+
+@font-face {
+    font-family: "Open Sans Bold"; 
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Regular"; 
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.welcome {
+  background: #000000 url("../images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome::after {
+  content: "";
+  background-color: #0000FF;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.45;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 280px;
+  
+  z-index: 2;
+}
+
+.welcome-logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  fill: #ffffff;
 }
