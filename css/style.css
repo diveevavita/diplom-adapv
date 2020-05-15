@@ -14,7 +14,7 @@ body {
 }
 
 .welcome {
-  background: #000000 url(../images/football_1280.jpg);
+  background: #000000 url(../images/football_1920.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -29,6 +29,20 @@ body {
   .surface_logo_text {
   	width: 135px;
   }
+
+  .welcome-title {
+  	text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: "Open Sans Bold Bold";
+    font-weight: 700;
+
+    width: 280px;
+    padding-top: 135px;
+    padding-bottom: 90px;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 959px) {
@@ -39,15 +53,15 @@ body {
   .surface_logo_text {
   	width: 205px;
   }
-}
 
-@media (min-width: 690px) and (max-width: 1919px) {
-  
-  .welcome {
-  	background: url(../images/football_1280.jpg);
-  }
-  .surface_logo_text {
-  	width: 190px;
+  .welcome-title {
+  	text-transform: uppercase;
+    font-size: 64px;
+    letter-spacing: 3px;
+
+    width: 660px;
+    padding-top: 180px;
+    padding-bottom: 310px;
   }
 }
 
@@ -70,8 +84,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  justify-content: center;
-  display: flex;
+
   
   z-index: 2;
 }
@@ -79,9 +92,8 @@ body {
 .welcome-logo {
   padding-top: 30px;
   left: 50%;
-
-  
-  display: inline-block;
+  justify-content: center;
+  display: flex;
 }
 
 .surface_logo_text {
@@ -89,3 +101,17 @@ body {
   width: 190px;
 }
 
+.welcome-title {
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: 5px;
+  line-height: 31px;
+  color: #ffffff;
+  font-family: "Open Sans Bold";
+  font-weight: 700;
+
+  width: 1532px;
+  margin: 0 auto;
+  padding-top: 285px;
+  padding-bottom: 218px;
+}
