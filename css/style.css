@@ -55,8 +55,9 @@ body {
   display: inline-block;
 }
 
-.logo {
+.surface_logo_text {
   width: 135px;
   height: 35px;
   fill: #ffffff;
 }
+
