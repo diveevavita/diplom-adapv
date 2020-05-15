@@ -51,8 +51,12 @@ body {
   padding-top: 30px;
   justify-content: space-between;
 
-  width: 135px;
-  height: 35px;
-  display: block;
+  
+  display: inline-block;
 }
 
+.logo {
+  width: 135px;
+  height: 35px;
+  fill: #ffffff;
+}
