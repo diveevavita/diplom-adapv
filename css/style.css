@@ -21,11 +21,65 @@ body {
   position: relative;
 }
 
+.welcome::after {
+  content: "";
+  background-color: #0a0e34;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.85;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+
+  text-align: center;
+
+  width: 1558px;
+  z-index: 2;
+}
+
+.surface_logo_text {
+  fill: #ffffff;
+  width: 190px;
+}
+
+.welcome-title {
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: 5px;
+  line-height: 31px;
+  color: #ffffff;
+  font-family: "Open Sans Bold";
+  font-weight: 700;
+
+  margin: 0 auto;
+  padding-top: 285px;
+  padding-bottom: 218px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 639px) {
   
   .welcome {
   	background: url(../images/football_767.jpg);
   }
+
+  .container {
+  	width: 280px;
+  }
+
   .surface_logo_text {
   	width: 135px;
   }
@@ -50,6 +104,11 @@ body {
   .welcome {
   	background: url(../images/football_1280.jpg);
   }
+
+  .container {
+  	width: 705px;
+  }
+
   .surface_logo_text {
   	width: 205px;
   }
@@ -63,55 +122,5 @@ body {
     padding-top: 180px;
     padding-bottom: 310px;
   }
-}
 
-.welcome::after {
-  content: "";
-  background-color: #0000FF;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.45;
-}
-
-.container {
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-
-  
-  z-index: 2;
-}
-
-.welcome-logo {
-  padding-top: 30px;
-  left: 50%;
-  justify-content: center;
-  display: flex;
-}
-
-.surface_logo_text {
-  fill: #ffffff;
-  width: 190px;
-}
-
-.welcome-title {
-  text-transform: uppercase;
-  font-size: 90px;
-  letter-spacing: 5px;
-  line-height: 31px;
-  color: #ffffff;
-  font-family: "Open Sans Bold";
-  font-weight: 700;
-
-  width: 1532px;
-  margin: 0 auto;
-  padding-top: 285px;
-  padding-bottom: 218px;
 }
