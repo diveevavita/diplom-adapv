@@ -67,7 +67,18 @@ body {
   padding-bottom: 218px;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  height: 160px;
+}
+
+.welcome-title_be {
+	text-align: left;
+	margin-bottom: 25px;
+	height: 65px;
+}
+
+.welcome-title_play {
+	text-align: right;
 }
 
 @media (max-width: 639px) {
