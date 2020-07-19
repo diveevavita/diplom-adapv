@@ -13,6 +13,10 @@ body {
     src: url(../fonts/OpenSans-Regular.ttf);
 }
 
+.body { 
+	width: 1340px;
+}
+
 .welcome {
   background: #000000 url(../images/football_1920.jpg);
   background-repeat: no-repeat;
@@ -79,6 +83,23 @@ body {
 
 .welcome-title_play {
 	text-align: right;
+}
+
+.buttons {
+	width: 465px;
+	height: 53px;
+}
+
+.button-appstore {
+	width: 215px;
+	height: 53px;
+}
+
+
+.apple_logo {
+	filter: brightness(100);
+  	width: 30px;
+  	fill: #ffffff;
 }
 
 @media (max-width: 639px) {
