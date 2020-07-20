@@ -14,7 +14,7 @@ body {
 }
 
 .body { 
-	width: 1340px;
+	width: 1920px;
 }
 
 .welcome {
@@ -54,7 +54,7 @@ body {
 
 .surface_logo_text {
   fill: #ffffff;
-  width: 190px;
+  width: 195px;
 }
 
 .welcome-title {
@@ -85,21 +85,37 @@ body {
 	text-align: right;
 }
 
-.buttons {
-	width: 465px;
-	height: 53px;
-}
-
 .button-appstore {
-	width: 215px;
-	height: 53px;
+	width: 310px;
+	height: 75px;
+  background-color: #5c42b0;
+  border-width: 0;
+  border-radius: 50px;
+  margin-right: 2%;
+  position: relative;
+  display: inline-block;
 }
-
 
 .apple_logo {
-	filter: brightness(100);
-  	width: 30px;
-  	fill: #ffffff;
+  filter: brightness(100);
+  width: 45px;
+  fill: #ffffff;
+}
+
+.button-gplay {
+  width: 310px;
+  height: 75px;
+  background-color: #5c42b0;
+  border-width: 0;
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.gplay_logo {
+  filter: brightness(100);
+  width: 45px;
+  fill: #ffffff;
 }
 
 @media (max-width: 639px) {
