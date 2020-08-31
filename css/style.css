@@ -92,6 +92,7 @@ body {
   border-width: 0;
   border-radius: 50px;
   margin-right: 2%;
+  margin-bottom: 110px;
   position: relative;
   display: inline-block;
 }
@@ -108,6 +109,7 @@ body {
   background-color: #5c42b0;
   border-width: 0;
   border-radius: 50px;
+  margin-bottom: 110px;
   position: relative;
   display: inline-block;
 }
@@ -116,6 +118,107 @@ body {
   filter: brightness(100);
   width: 45px;
   fill: #ffffff;
+}
+
+.content {
+  padding-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+
+.post-list {
+  display: flex;
+  justify-content: center;
+  
+  margin-bottom: 55px;
+}
+
+.post-img {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 566px;
+  margin-right: 50px;
+  z-index: 7;
+  top: 987px;
+  left: 20%;
+  position: absolute;
+}
+
+.post {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 88px;
+}
+
+.post-name {
+  text-transform: uppercase;
+  font-family: "Open Sans Bold";
+  font-size: 80px;
+  line-height: 60px;
+  color: #e7e7e7;
+  font-weight: 700;
+  padding-left: 60%;
+  margin-top: 0;
+  margin-bottom: 51px;
+}
+
+.post-section {
+  padding-left: 60%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.post-section:nth-child(3) {
+  background-color: #f6f4fa;
+}
+
+.post-section:nth-child(4) {
+  background-color: #5e42b0;
+}
+
+.post-section_name {
+  display: flex;
+  height: 40px;
+  margin-bottom: 29px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: #c1c1c1;
+  font-weight: 700;
+  font-family: "Open Sans Bold";
+  margin:0;
+}
+
+.post-section_number {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans Bold";
+}
+
+.shape {
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+}
+
+.shape:nth-child(3) {
+  background-color: #f6f4fa;
+}
+
+.post-section_text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 
 @media (max-width: 639px) {
