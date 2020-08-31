@@ -140,7 +140,7 @@ body {
   margin-right: 50px;
   z-index: 7;
   top: 987px;
-  left: 20%;
+  left: 15%;
   position: absolute;
 }
 
@@ -157,13 +157,13 @@ body {
   line-height: 60px;
   color: #e7e7e7;
   font-weight: 700;
-  padding-left: 60%;
+  padding-left: 55%;
   margin-top: 0;
   margin-bottom: 51px;
 }
 
 .post-section {
-  padding-left: 60%;
+  padding-left: 55%;
   padding-top: 55px;
   padding-bottom: 55px;
 }
