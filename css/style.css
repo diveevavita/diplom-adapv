@@ -68,7 +68,9 @@ body {
 
   margin: 0 auto;
   padding-top: 285px;
-  padding-bottom: 218px;
+  padding-bottom: 220px;
+  padding-left: 5%;
+  padding-right: 5%;
 
   display: flex;
   flex-direction: column;
@@ -85,8 +87,15 @@ body {
 	text-align: right;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
 .button-appstore {
-	width: 310px;
+	width: 275px;
 	height: 75px;
   background-color: #5c42b0;
   border-width: 0;
@@ -94,17 +103,20 @@ body {
   margin-right: 2%;
   margin-bottom: 110px;
   position: relative;
-  display: inline-block;
+  text-decoration: none;
+  padding-left: 35px;
+  display: flex;
 }
 
 .apple_logo {
   filter: brightness(100);
   width: 45px;
   fill: #ffffff;
+  margin-right: 15px;
 }
 
 .button-gplay {
-  width: 310px;
+  width: 255px;
   height: 75px;
   background-color: #5c42b0;
   border-width: 0;
@@ -112,42 +124,73 @@ body {
   margin-bottom: 110px;
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  padding-left: 55px;
+
+  display: flex;
 }
 
 .gplay_logo {
   filter: brightness(100);
-  width: 45px;
+  width: 40px;
   fill: #ffffff;
+  margin-right: 15px;
 }
 
-.content {
-  padding-top: 27px;
-  display: flex;
-  justify-content: center;
+.button-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button-text_top {
+  font-weight: 400;
+  font-family: "Open Sans Regular";
+  margin: 0;
+  height: 15px;
+}
+
+.button-text_bottom {
+  font-weight: 700;
+  font-family: "Open Sans Bold";
+  margin: 0;
+  height: 15px;
 }
 
 .post-list {
-  display: flex;
   justify-content: center;
-  
-  margin-bottom: 55px;
 }
 
-.post-img {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 566px;
-  margin-right: 50px;
+.post-img_foot {
   z-index: 7;
   top: 987px;
   left: 15%;
   position: absolute;
 }
 
+.post-img_bask {
+  z-index: 7;
+  top: 2000px;
+  right: 0;
+  position: absolute;
+}
+
 .post {
-  display: inline-block;
-  box-sizing: border-box;
-  padding-top: 88px;
+  padding-top: 116px;
+}
+
+article:nth-of-type(1)>.post-name {
+  padding-left: 55%;
+  padding-right: 5%;
+}
+
+article:nth-of-type(1)>.post-section {
+  padding-left: 55%;
+  padding-right: 5%;
 }
 
 .post-name {
@@ -157,23 +200,29 @@ body {
   line-height: 60px;
   color: #e7e7e7;
   font-weight: 700;
-  padding-left: 55%;
   margin-top: 0;
   margin-bottom: 51px;
+  padding-right: 55%;
+  padding-left: 5%;
 }
 
 .post-section {
-  padding-left: 55%;
+  padding-right: 55%;
+  padding-left: 5%;
   padding-top: 55px;
   padding-bottom: 55px;
 }
 
-.post-section:nth-child(3) {
+.post-section:nth-of-type(2) {
   background-color: #f6f4fa;
 }
 
-.post-section:nth-child(4) {
+.post-section:nth-of-type(3) {
   background-color: #5e42b0;
+}
+
+article:nth-of-type(2)>.post-section:nth-of-type(3) {
+  background-color: #0a0e34;
 }
 
 .post-section_name {
@@ -194,6 +243,9 @@ h3 {
 }
 
 .post-section_number {
+  height: 30px;
+  box-sizing: border-box;
+  position: relative;
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 34px;
@@ -202,15 +254,38 @@ h3 {
   font-family: "Open Sans Bold";
 }
 
-.shape {
+.post-section_number::after {
+  content:"";
   width: 19px;
   height: 5px;
   border-radius: 2px;
   background-color: #5e42b0;
+  display: inline-block;
+  position: absolute;
 }
 
-.shape:nth-child(3) {
+.post-section_number_third::after {
+  content:"";
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
   background-color: #f6f4fa;
+  display: inline-block;
+  position: absolute;
+}
+
+.post-section:nth-of-type(3)>.post-section_name>.post-section_number::after {
+  content:"";
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  background-color: #f6f4fa;
+}
+
+article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_name>.post-section_number {
+  color: #9173e6;
 }
 
 .post-section_text {
@@ -219,6 +294,10 @@ h3 {
   color: #000000;
   font-weight: 400;
   font-family: "Open Sans";
+}
+
+article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
+  color: #ffffff;
 }
 
 @media (max-width: 639px) {
