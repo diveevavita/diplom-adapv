@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>diplom adapt</title>
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header class="welcome">
@@ -46,7 +47,11 @@
 		</div>
 	</header>
 	<main class="post-list">
-		<img class="post-img_foot" src="images/footballer_566.png" alt="Футболист">
+		<picture class="post-img_foot">
+			<source srcset="mages/footballer_497.png" media="(max-width: 768px)">
+    		<source srcset="images/footballer_566.png">
+    		<img srcset="images/footballer_566.png" alt="Футболист">
+		</picture>
 		<article class="post">
 			<h2 class="post-name">Athlets</h2>
 			<div class="post-section">
@@ -131,7 +136,11 @@
 				</div>
 			</div>
 		</article>
-		<img class="post-img_bask" src="images/basketballer_991.png" alt="Баскетболист">
+		<picture class="post-img_bask">
+			<source srcset="mages/footballer_436.png" media="(max-width: 768px)">
+    		<source srcset="images/basketballer_991.png">
+    		<img srcset="images/basketballer_991.png" alt="Баскетболист">
+		</picture>
 		<article class="recent-post">
 			<img class="recent-post-img" src="images/be-active_960.jpg" alt="Мужчина с телефоном">
 			
