@@ -377,6 +377,16 @@ article:nth-of-type(4)>.post-section_number {
   padding: 50px 70px;
 }
 
+article:nth-of-type(4)>.post-section_number::after {
+  content:"";
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #f6f4fa;
+  display: inline-block;
+  position: absolute;
+}
+
 article:nth-of-type(5)>.post-section_number {
   z-index: 8;
   width: 168px;
@@ -386,6 +396,16 @@ article:nth-of-type(5)>.post-section_number {
   left: 44.5%;
   position: absolute;
   padding: 50px 70px;
+}
+
+article:nth-of-type(5)>.post-section_number::after {
+  content:"";
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #f6f4fa;
+  display: inline-block;
+  position: absolute;
 }
 
 .footer {
