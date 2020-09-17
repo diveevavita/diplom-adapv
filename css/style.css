@@ -14,7 +14,8 @@ body {
 }
 
 .body { 
-	width: 1920px;
+	width: 100%;
+  height: 100%;
 }
 
 .welcome {
@@ -193,6 +194,10 @@ article:nth-of-type(1)>.post-section {
   padding-right: 5%;
 }
 
+article:nth-of-type(1)>.post-section:nth-of-type(3)>.post-section_text {
+  color: #ffffff;
+}
+
 .post-name {
   text-transform: uppercase;
   font-family: "Open Sans Bold";
@@ -253,6 +258,7 @@ h3 {
   color: #000000;
   font-weight: 700;
   font-family: "Open Sans Bold";
+  margin-right: 10px;
 }
 
 .post-section_number::after {
@@ -294,7 +300,7 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_name>.post-sec
   letter-spacing: 1px;
   color: #000000;
   font-weight: 400;
-  font-family: "Open Sans";
+  font-family: "Open Sans Regular";
 }
 
 article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
@@ -306,13 +312,23 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
 }
 
 .recent-post_img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+.recent-post_half {
   width: 50%;
 }
 
 .recent-post_info {
-  padding-top: 260px;
-  padding-left: 130px;
-  padding-bottom: 240px;
+  padding-right: 10%;
+  padding-left: 8%;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 50%;
+  box-sizing: border-box;
 }
 
 article:nth-of-type(3)>.recent-post_info>.post-name {
@@ -320,8 +336,11 @@ article:nth-of-type(3)>.recent-post_info>.post-name {
   padding: 0;
 }
 
+
+
 article:nth-of-type(4)>.recent-post_info>.post-name {
   margin-bottom: 115px;
+  line-height: 1;
   padding: 0;
 }
 
@@ -341,22 +360,23 @@ article:nth-of-type(5)>.recent-post_info>.post-name {
 }
 
 article:nth-of-type(4)>.recent-post_info {
+  box-sizing: border-box;
   padding-left: 5%;
-  padding-right: 115px;
+  padding-right: 5%;
 }
 
-article:nth-of-type(3)>.post-section_number {
+article:nth-of-type(3)>.recent-post_half>.post-section_number {
   z-index: 8;
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
-  top: 3190px;
-  left: 44.5%;
+  top: 3070px;
+  left: 45%;
   position: absolute;
   padding: 50px 70px;
 }
 
-article:nth-of-type(3)>.post-section_number::after {
+article:nth-of-type(3)>.recent-post_half>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -366,18 +386,18 @@ article:nth-of-type(3)>.post-section_number::after {
   position: absolute;
 }
 
-article:nth-of-type(4)>.post-section_number {
+article:nth-of-type(4)>.recent-post_half>.post-section_number {
   z-index: 8;
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
-  top: 3900px;
+  top: 3680px;
   left: 44.5%;
   position: absolute;
   padding: 50px 70px;
 }
 
-article:nth-of-type(4)>.post-section_number::after {
+article:nth-of-type(4)>.recent-post_half>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -387,18 +407,18 @@ article:nth-of-type(4)>.post-section_number::after {
   position: absolute;
 }
 
-article:nth-of-type(5)>.post-section_number {
+article:nth-of-type(5)>.recent-post_half>.post-section_number {
   z-index: 8;
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
-  top: 4700px;
+  top: 4280px;
   left: 44.5%;
   position: absolute;
   padding: 50px 70px;
 }
 
-article:nth-of-type(5)>.post-section_number::after {
+article:nth-of-type(5)>.recent-post_half>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -496,7 +516,7 @@ article:nth-of-type(5)>.post-section_number::after {
   margin-bottom: 60px;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   
   .welcome {
   	background: url(../images/football_767.jpg);
@@ -525,28 +545,276 @@ article:nth-of-type(5)>.post-section_number::after {
   }
 }
 
-@media (min-width: 640px) and (max-width: 959px) {
-  
+@media (min-width: 641px) and (max-width: 960px) {
+  .body {
+    width: 100vw;
+  }
+
   .welcome {
   	background: url(../images/football_1280.jpg);
   }
 
   .container {
-  	width: 705px;
+    padding-top: 40px;
+  	width: 100%;
   }
 
   .surface_logo_text {
-  	width: 205px;
+  	width: 210px;
   }
 
   .welcome-title {
-  	text-transform: uppercase;
-    font-size: 64px;
+    text-transform: uppercase;
+  	font-size: 64px;
     letter-spacing: 3px;
+    text-align: center;
 
-    width: 660px;
     padding-top: 180px;
     padding-bottom: 310px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-direction: column;
+    height: 205px;
   }
 
+  .welcome-title_be {
+    margin-bottom: 30px;
+    height: 50px;
+  }
+
+  .welcome-title_play {
+    text-align: left;
+    line-height: 1;
+    width: 500px;
+    margin-left: auto;
+    margin-right: 0em;
+  }
+
+  .button-appstore {
+    width: 270px;
+    height: 80px;
+    padding-left: 40px;
+    margin-bottom: 90px;
+    margin-right: 2%;
+  }
+
+  .apple_logo {
+    width: 40px;
+    margin-right: 30px;
+  }
+
+  .button-gplay {
+    width: 255px;
+    height: 80px;
+    padding-left: 55px;
+    margin-bottom: 90px;
+  }
+
+  .gplay_logo {
+    width: 44px;
+    margin-right: 25px;
+  }
+
+  .button-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .button-text_top {
+    font-weight: 300;
+  }
+
+  .post-img_foot {
+    top: 1050px;
+    left: -23%;
+  }
+
+  .post-img_bask {
+    top: 2000px;
+    right: -7%;
+  }
+
+  .post {
+    padding-top: 85px;
+  }
+
+  article:nth-of-type(1)>.post-name {
+    padding-left: 45%;
+    padding-right: 5%;
+  }
+
+  article:nth-of-type(1)>.post-section {
+    padding-left: 45%;
+    padding-right: 5%;
+  }
+
+  .post-name {
+    margin-bottom: 60px;
+    padding-right: 45%;
+    padding-left: 5%;
+  }
+
+  .post-section {
+    padding-right: 45%;
+    padding-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .post-section_name {
+    height: 30px;
+    margin-bottom: 35px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .post-section_number {
+    height: 15px;
+  }
+
+  .recent-post {
+  display: block;
+  }
+
+  article:nth-of-type(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post-section_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .recent-post_img {
+    width: 100%;
+  }
+
+  .recent-post_info {
+    padding-top: 90px;
+    padding-left: 5%;
+    padding-bottom: 100px;
+  }
+
+  article:nth-of-type(3)>.recent-post_info>.post-name {
+    padding-left: 5%;
+    margin-bottom: 40px;
+  }
+
+  article:nth-of-type(4)>.recent-post_info>.post-name {
+    padding-left: 5%;
+    margin-bottom: 40px;
+  }
+
+  article:nth-of-type(5)>.recent-post_info>.post-name {
+    padding-left: 5%;
+    margin-bottom: 40px;
+  }
+
+  article:nth-of-type(4)>.recent-post_info {
+    padding-right: 0;
+  }
+
+  article:nth-of-type(3)>.post-section_number {
+    width: 115px;
+    height: 115px;
+    background-color: #5e42b0;
+    top: 3460px;
+    left: 5%;
+    color: #ffffff;
+    padding: 40px 45px;
+  }
+
+  article:nth-of-type(3)>.post-section_number::after {
+    background-color: #c1c1c1;
+  }
+
+  article:nth-of-type(4)>.post-section_number {
+    width: 115px;
+    height: 115px;
+    background-color: #5e42b0;
+    top: 4540px;
+    left: 5%;
+    color: #ffffff;
+    padding: 40px 45px;
+  }
+
+  article:nth-of-type(4)>.post-section_number::after {
+    background-color: #c1c1c1;
+  }
+
+  article:nth-of-type(5)>.post-section_number {
+    width: 115px;
+    height: 115px;
+    background-color: #5e42b0;
+    top: 5620px;
+    left: 5%;
+    color: #ffffff;
+    padding: 40px 45px;
+  }
+
+  article:nth-of-type(5)>.post-section_number::after {
+    background-color: #c1c1c1;
+  }
+
+  .footer {
+    background: #000000 url(../images/game_1280.jpg);
+  }
+
+  .footer-container {
+    padding-top: 125px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .footer_logo {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .surface_logo {
+    width: 130px;
+    padding: 25px 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-text {
+    padding-top: 80px;
+    padding-bottom: 285px;
+  }
+
+  .footer-text_top {
+    margin-bottom: 30px;
+  }
+
+  .footer-container>.buttons {
+    margin-bottom: 50px;
+  }
+
+  .footer-container>.buttons>.button-appstore {
+    margin-bottom: 0;
+  }
+
+  .footer-container>.buttons>.button-gplay {
+    margin-bottom: 0;
+  }
+
+  .footer-container>a:nth-of-type(2)>.surface_logo_text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .welcome {
+    background: url(../images/football_767.jpg);
+  }
 }
