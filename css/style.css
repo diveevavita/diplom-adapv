@@ -309,6 +309,7 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
 
 .recent-post {
   display: flex;
+  max-height: 730px;
 }
 
 .recent-post_img {
@@ -316,10 +317,12 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
   display: block;
   height: auto;
   margin: 0;
+  position: relative;
 }
 
 .recent-post_half {
   width: 50%;
+  position: relative;
 }
 
 .recent-post_info {
@@ -329,6 +332,7 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
   margin-bottom: auto;
   max-width: 50%;
   box-sizing: border-box;
+  position: relative;
 }
 
 article:nth-of-type(3)>.recent-post_info>.post-name {
@@ -365,18 +369,23 @@ article:nth-of-type(4)>.recent-post_info {
   padding-right: 5%;
 }
 
-article:nth-of-type(3)>.recent-post_half>.post-section_number {
+article:nth-of-type(4)>.recent-post_half {
+  margin-right: 0;
+}
+
+.square {
+  box-sizing: border-box;
   z-index: 8;
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
-  top: 3070px;
-  left: 45%;
   position: absolute;
   padding: 50px 70px;
+  top: 25%;
+  left: 90%;
 }
 
-article:nth-of-type(3)>.recent-post_half>.post-section_number::after {
+article:nth-of-type(3)>.recent-post_half>.square>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -386,18 +395,11 @@ article:nth-of-type(3)>.recent-post_half>.post-section_number::after {
   position: absolute;
 }
 
-article:nth-of-type(4)>.recent-post_half>.post-section_number {
-  z-index: 8;
-  width: 168px;
-  height: 155px;
-  background-color: #5e42b0;
-  top: 3680px;
-  left: 44.5%;
-  position: absolute;
-  padding: 50px 70px;
+article:nth-of-type(4)>.recent-post_half>.square {
+  left: -10%;
 }
 
-article:nth-of-type(4)>.recent-post_half>.post-section_number::after {
+article:nth-of-type(4)>.recent-post_half>.square>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -407,18 +409,7 @@ article:nth-of-type(4)>.recent-post_half>.post-section_number::after {
   position: absolute;
 }
 
-article:nth-of-type(5)>.recent-post_half>.post-section_number {
-  z-index: 8;
-  width: 168px;
-  height: 155px;
-  background-color: #5e42b0;
-  top: 4280px;
-  left: 44.5%;
-  position: absolute;
-  padding: 50px 70px;
-}
-
-article:nth-of-type(5)>.recent-post_half>.post-section_number::after {
+article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   content:"";
   width: 19px;
   height: 5px;
@@ -816,5 +807,10 @@ article:nth-of-type(5)>.recent-post_half>.post-section_number::after {
 @media (min-width: 1920px) {
   .welcome {
     background: url(../images/football_767.jpg);
+  }
+
+  .recent-post {
+  display: flex;
+  max-height: 730px;
   }
 }
