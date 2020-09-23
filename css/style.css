@@ -309,11 +309,11 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
 
 .recent-post {
   display: flex;
-  max-height: 730px;
+  height: auto;
 }
 
 .recent-post_img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
   margin: 0;
@@ -379,10 +379,11 @@ article:nth-of-type(4)>.recent-post_half {
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
-  position: absolute;
+  position: relative;
   padding: 50px 70px;
-  top: 25%;
-  left: 90%;
+  top: -58%;
+  left: 100%;
+  transform: translateX(-50%);
 }
 
 article:nth-of-type(3)>.recent-post_half>.square>.post-section_number::after {
@@ -396,7 +397,7 @@ article:nth-of-type(3)>.recent-post_half>.square>.post-section_number::after {
 }
 
 article:nth-of-type(4)>.recent-post_half>.square {
-  left: -10%;
+  left: 0;
 }
 
 article:nth-of-type(4)>.recent-post_half>.square>.post-section_number::after {
