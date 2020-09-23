@@ -315,7 +315,7 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
 .recent-post_img {
   width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
   margin: 0;
   position: relative;
 }
@@ -807,11 +807,10 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
 
 @media (min-width: 1920px) {
   .welcome {
-    background: url(../images/football_767.jpg);
+    background: url(../images/football_1920.jpg);
   }
 
   .recent-post {
   display: flex;
-  max-height: 730px;
   }
 }
