@@ -14,7 +14,7 @@ body {
 }
 
 .body { 
-	width: 100vw;
+  width: 100vw;
   height: 100%;
 }
 
@@ -79,13 +79,13 @@ body {
 }
 
 .welcome-title_be {
-	text-align: left;
-	margin-bottom: 25px;
-	height: 65px;
+  text-align: left;
+  margin-bottom: 25px;
+  height: 65px;
 }
 
 .welcome-title_play {
-	text-align: right;
+  text-align: right;
   line-height: 1;
 }
 
@@ -97,8 +97,8 @@ body {
 }
 
 .button-appstore {
-	width: 275px;
-	height: 75px;
+  width: 275px;
+  height: 75px;
   background-color: #5c42b0;
   border-width: 0;
   border-radius: 50px;
@@ -180,7 +180,7 @@ body {
   z-index: 7;
   top: 2000px;
   right: 10%;
-  transform: translateX(15%);
+  transform: translateX(10%);
   position: absolute;
 }
 
@@ -332,7 +332,7 @@ article:nth-of-type(2)>.post-section:nth-of-type(3)>.post-section_text {
 
 .recent-post_info {
   padding-right: 10%;
-  padding-left: 8%;
+  padding-left: 10%;
   margin-top: auto;
   margin-bottom: auto;
   width: 50%;
@@ -487,7 +487,8 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   border-width: 0;
   border-radius: 40px;
   fill: #ffffff;
-  width: 100px;
+  width: 130px;
+  height: 135px;
   padding: 15px;
   margin-right: 15px;
 }
@@ -525,8 +526,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   margin-bottom: 60px;
 }
 
-@media (max-width: 640px) {
-
+@media (min-width: 320px) and (max-width: 440px) {
   .body {
     width: 100%;
   }
@@ -535,7 +535,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   
   .welcome {
     width: 100vw;
-  	background: url(../images/football_767.jpg);
+    background: url(../images/football_767.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -543,12 +543,12 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   }
 
   .container {
-  	width: 100%;
+    width: 100%;
     padding-top: 30px;
   }
 
   .surface_logo_text {
-  	width: 135px;
+    width: 135px;
   }
 
   .welcome-title {
@@ -623,8 +623,8 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   }
 
   .post-img_bask {
-    top: 1765px;
-    right: 10%;
+    top: 1790px;
+    right: 20%;
   }
 
   .post {
@@ -644,6 +644,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   .post-name {
     font-size: 50px;
     margin-bottom: 245px;
+    padding-right: 0;
   }
 
   .post-section {
@@ -833,17 +834,329 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   .footer-container>a:nth-of-type(2)>.surface_logo_text {
     margin-bottom: 10px;
   }
+}
+
+@media (min-width:441px) and (max-width: 640px) {
+
+  .body {
+    width: 100%;
+  }
+
+
+  
+  .welcome {
+    width: 100vw;
+    background: url(../images/football_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .container {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .surface_logo_text {
+    width: 135px;
+  }
+
+  .welcome-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+
+    padding-top: 135px;
+    padding-bottom: 90px;
+  }
+
+  .welcome-title_be {
+    margin-bottom: 30px;
+    height: 20px;
+  }
+
+  .welcome-title_play {
+    text-align: left;
+    line-height: 1;
+    width: 235px;
+    margin-left: auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-appstore {
+    width: 200px;
+    height: 35px;
+    margin-right: 0;
+    padding-left: 80px;
+    margin-bottom: 15px;
+  }
+
+  .apple_logo {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .button-gplay {
+    width: 200px;
+    height: 35px;
+    padding-left: 80px;
+    margin-bottom: 85px;
+  }
+
+  .gplay_logo {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .button-text {
+    font-size: 8px;
+    letter-spacing: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .button-text_top {
+    height: 8px;
+  }
+
+  .button-text_bottom{
+    height: 8px;
+  }
+
+  .post-img_foot {
+    top: 725px;
+    left: 25%;
+  }
+
+  .post-img_bask {
+    top: 1740px;
+    right: 10%;
+  }
+
+  .post {
+    padding-top: 25px;
+  }
+
+  article:nth-of-type(1)>.post-name {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  article:nth-of-type(1)>.post-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .post-name {
+    font-size: 50px;
+    margin-bottom: 245px;
+    padding-right: 0;
+  }
+
+  .post-section {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .post-section:nth-of-type(1) {
+    background-color: #fafafa;
+  }
+
+  .post-section_name {
+    height: 20px;
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 34px;
+  }
+
+  article:nth-of-type(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post-section_number {
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .post-section_number::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+  }
+
+  .post-section:nth-of-type(3)>.post-section_name>.post-section_number::after {
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+  }
+
+  .post-section_text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .recent-post {
+    flex-direction: column;
+  }
+
+  .recent-post_half {
+    width: 100%;
+    margin-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  .recent-post_info {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  article:nth-of-type(3)>.recent-post_info>.post-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  article:nth-of-type(4)>.recent-post_info>.post-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  article:nth-of-type(5)>.recent-post_info>.post-name {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .recent-post_text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .square {
+    width: 70px;
+    height: 70px;
+    padding: 10px 25px 20px;
+    left: 5%;
+    top: 103%;
+    transform: translateY(-80%);
+    position: absolute;
+  }
+
+  article:nth-of-type(4)>.recent-post_half>.square {
+    left: 5%;
+  }
+
+  article:nth-of-type(3)>.recent-post_half>.square>.post-section_number::after {
+  width: 15px;
+  height: 4px;
+  border-radius: 1px;
+  }
+
+  article:nth-of-type(4)>.recent-post_half>.square>.post-section_number::after {
+  width: 15px;
+  height: 4px;
+  border-radius: 1px;
+  }
+
+  article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
+  width: 15px;
+  height: 4px;
+  border-radius: 1px;
+  }
+
+  .footer {
+    background: #000000 url(../images/game_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer-container {
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+  }
+
+  .footer_logo {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .surface_logo {
+    width: 72px;
+    padding: 15px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+
+  .footer-text {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+    line-height: 80;
+  }
+
+  .footer-text_top {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  .footer-text_bottom {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .footer-container>.buttons {
+    margin-bottom: 80px;
+  }
+
+  .footer-container>.buttons>.button-gplay {
+    margin-bottom: 0;
+  }
+
+  .footer-container>a:nth-of-type(2)>.surface_logo_text {
+    margin-bottom: 10px;
+  }
 
 }
 
-@media (min-width: 641px) and (max-width: 960px) {
+@media (min-width: 641px) and (max-width: 740px) {
   .body {
     width: 100vw;
     height: 100%;
   }
 
   .welcome {
-  	background: url(../images/football_1280.jpg);
+    background: url(../images/football_1280.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -852,15 +1165,15 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
 
   .container {
     padding-top: 40px;
-  	width: 100%;
+    width: 100%;
   }
 
   .surface_logo_text {
-  	width: 210px;
+    width: 210px;
   }
 
   .welcome-title {
-  	font-size: 64px;
+    font-size: 64px;
     letter-spacing: 3px;
 
     padding-top: 180px;
@@ -902,7 +1215,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   .post-img_bask {
     top: 1900px;
     right: 5%;
-    transform: translateX(10%);
+    transform: translateX(7%);
   }
 
   .post {
@@ -911,7 +1224,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
 
   article:nth-of-type(1)>.post-name {
     padding-left: 45%;
-    padding-right: 5%;
+    padding-right: 0;
   }
 
   article:nth-of-type(1)>.post-section {
@@ -921,7 +1234,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
 
   .post-name {
     margin-bottom: 20px;
-    padding-right: 45%;
+    padding-right: 0;
   }
 
   .post-section {
@@ -964,7 +1277,7 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
 
   .recent-post_half {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     padding-bottom: 0;
   }
 
@@ -980,8 +1293,9 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
     height: 115px;
     padding: 45px 40px;
     left: 5%;
-    top: 10%;
+    top: 103%;
     transform: translateY(-80%);
+    position: absolute;
   }
 
   article:nth-of-type(4)>.recent-post_half>.square {
@@ -1062,4 +1376,463 @@ article:nth-of-type(5)>.recent-post_half>.square>.post-section_number::after {
   .footer-container>a:nth-of-type(2)>.surface_logo_text {
     margin-bottom: 25px;
   }
+}
+
+@media (min-width: 741px) and (max-width: 960px) {
+  .body {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .welcome {
+    background: url(../images/football_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .surface_logo_text {
+    width: 210px;
+  }
+
+  .welcome-title {
+    font-size: 64px;
+    letter-spacing: 3px;
+
+    padding-top: 180px;
+    padding-bottom: 310px;
+  }
+
+  .welcome-title_be {
+    margin-bottom: 30px;
+  }
+
+  .welcome-title_play {
+    text-align: left;
+    line-height: 1;
+    width: 500px;
+    margin-left: auto;
+  }
+
+  .button-appstore {
+    height: 80px;
+    margin-bottom: 90px;
+    margin-right: 2%;
+  }
+
+  .button-gplay {
+    height: 80px;
+    margin-bottom: 90px;
+  }
+
+  .button-text_top {
+    font-weight: 300;
+  }
+
+  .post-img_foot {
+    top: 1025px;
+    left: 10%;
+    transform: translateX(-45%);
+  }
+
+  .post-img_bask {
+    top: 1900px;
+    right: 5%;
+    transform: translateX(10%);
+  }
+
+  .post {
+    padding-top: 85px;
+  }
+
+  article:nth-of-type(1)>.post-name {
+    padding-left: 45%;
+    padding-right: 0;
+  }
+
+  article:nth-of-type(1)>.post-section {
+    padding-left: 45%;
+    padding-right: 5%;
+  }
+
+  .post-name {
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+
+  .post-section {
+    padding-right: 45%;
+    padding-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .post-section_name {
+    height: 30px;
+    margin-bottom: 35px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .post-section_number {
+    height: 15px;
+  }
+
+  article:nth-of-type(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post-section_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .recent-post {
+    flex-direction: column;
+  }
+
+  .recent-post_img {
+    object-fit: contain;
+  }
+
+  .recent-post_half {
+    width: 100%;
+    margin-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  .recent-post_info {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  .square {
+    width: 115px;
+    height: 115px;
+    padding: 45px 40px;
+    left: 5%;
+    top: 103%;
+    transform: translateY(-80%);
+    position: absolute;
+  }
+
+  article:nth-of-type(4)>.recent-post_half>.square {
+    left: 5%;
+  }
+
+  article:nth-of-type(3)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  article:nth-of-type(4)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  article:nth-of-type(5)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  .footer {
+    background: #000000 url(../images/game_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer-container {
+    padding-top: 125px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  .footer_logo {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .surface_logo {
+    width: 130px;
+    padding: 25px 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-text {
+    padding-top: 80px;
+    padding-bottom: 285px;
+    text-transform: uppercase;
+    line-height: 80;
+  }
+
+  .footer-text_top {
+    margin-bottom: 30px;
+    line-height: 80px;
+  }
+
+  .footer-text_bottom {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .footer-container>.buttons {
+    margin-bottom: 50px;
+  }
+
+  .footer-container>.buttons>.button-appstore {
+    margin-bottom: 0;
+  }
+
+  .footer-container>.buttons>.button-gplay {
+    margin-bottom: 0;
+  }
+
+  .footer-container>a:nth-of-type(2)>.surface_logo_text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1200px) {
+  .body {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .welcome {
+    background: url(../images/football_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .surface_logo_text {
+    width: 210px;
+  }
+
+  .welcome-title {
+    font-size: 64px;
+    letter-spacing: 3px;
+
+    padding-top: 180px;
+    padding-bottom: 310px;
+  }
+
+  .welcome-title_be {
+    margin-bottom: 30px;
+  }
+
+  .welcome-title_play {
+    text-align: left;
+    line-height: 1;
+    width: 500px;
+    margin-left: auto;
+  }
+
+  .button-appstore {
+    height: 80px;
+    margin-bottom: 90px;
+    margin-right: 2%;
+  }
+
+  .button-gplay {
+    height: 80px;
+    margin-bottom: 90px;
+  }
+
+  .button-text_top {
+    font-weight: 300;
+  }
+
+  .post-img_foot {
+    top: 1025px;
+    left: 10%;
+    transform: translateX(-45%);
+  }
+
+  .post-img_bask {
+    top: 1800px;
+    right: 5%;
+    transform: translateX(5%);
+  }
+
+  .post {
+    padding-top: 85px;
+  }
+
+  article:nth-of-type(1)>.post-name {
+    padding-left: 45%;
+    padding-right: 0;
+  }
+
+  article:nth-of-type(1)>.post-section {
+    padding-left: 45%;
+    padding-right: 5%;
+  }
+
+  .post-name {
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+
+  .post-section {
+    padding-right: 45%;
+    padding-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .post-section_name {
+    height: 30px;
+    margin-bottom: 35px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .post-section_number {
+    height: 15px;
+  }
+
+  article:nth-of-type(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post-section_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .recent-post {
+    flex-direction: column;
+  }
+
+  .recent-post_img {
+    object-fit: contain;
+  }
+
+  .recent-post_half {
+    width: 100%;
+    margin-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  .recent-post_info {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  .square {
+    width: 115px;
+    height: 115px;
+    padding: 45px 40px;
+    left: 5%;
+    top: 103%;
+    transform: translateY(-80%);
+    position: absolute;
+  }
+
+  article:nth-of-type(4)>.recent-post_half>.square {
+    left: 5%;
+  }
+
+  article:nth-of-type(3)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  article:nth-of-type(4)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  article:nth-of-type(5)>.recent-post_info>.post-name {
+    margin-bottom: 35px;
+  }
+
+  .footer {
+    background: #000000 url(../images/game_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer-container {
+    padding-top: 125px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  .footer_logo {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .surface_logo {
+    width: 130px;
+    padding: 25px 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-text {
+    padding-top: 80px;
+    padding-bottom: 285px;
+    text-transform: uppercase;
+    line-height: 80;
+  }
+
+  .footer-text_top {
+    margin-bottom: 30px;
+    line-height: 80px;
+  }
+
+  .footer-text_bottom {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .footer-container>.buttons {
+    margin-bottom: 50px;
+  }
+
+  .footer-container>.buttons>.button-appstore {
+    margin-bottom: 0;
+  }
+
+  .footer-container>.buttons>.button-gplay {
+    margin-bottom: 0;
+  }
+
+  .footer-container>a:nth-of-type(2)>.surface_logo_text {
+    margin-bottom: 25px;
+  }
+
 }
